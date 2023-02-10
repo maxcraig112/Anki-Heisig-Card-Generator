@@ -22,3 +22,9 @@ Using the [Kanji Api](https://kanjiapi.dev/), all Kanji characters are downloade
 - Kanji Character 
 - Stroke order
 - Alternate Meanings
+
+
+https://kanjiapi.dev/
+https://www.kanshudo.com/search?q=%E6%97%A5
+https://github.com/KanjiVG/kanjivg
+https://github.com/kerrickstaley/genanki
