@@ -10,7 +10,7 @@ def generateReadingDeck():
     heisigData = json.load(file)
 
     readingModel = genanki.Model(
-        random.randrange(1 << 30, 1 << 31),
+        1241651361342,
         'Heisig Reading Model',
         fields=[
             {'name': 'Kanji Character'},
@@ -33,7 +33,7 @@ def generateReadingDeck():
     )
 
     readingDeck = genanki.Deck(
-        random.randrange(1 << 30, 1 << 31),
+        136141413451231,
         'Heisig Reading Deck'
     )
 
@@ -71,7 +71,7 @@ def generateWritingDeck():
     file = open("heisig_data.json","r",encoding="utf-8")
     heisigData = json.load(file)
 
-    readingModel = genanki.Model(
+    writingModel = genanki.Model(
         120391087121,
         'Heisig Writing Model',
         fields=[
@@ -94,9 +94,9 @@ def generateWritingDeck():
         ]
     )
 
-    readingDeck = genanki.Deck(
+    writingDeck = genanki.Deck(
         120392312321,
-        'Heisig Writing Deck'
+        'Heisig Speaking Deck'
     )
 
     for kanji in heisigData:
@@ -104,29 +104,29 @@ def generateWritingDeck():
         kanjiData = heisigData[kanji]
 
         #create new note
-        newReadingNote = genanki.Note(
-        readingModel,
+        newWritingNote = genanki.Note(
+        writingModel,
         fields=[
-            kanjiData["kanji"],
             kanji,
+            kanjiData["kanji"],
             kanjiData["kun_reading"],
             f'<img src="{kanjiData["stroke_order"]}">',
-            str(kanjiData["alternate_meanings"])[1:-1].replace("'","")
+            str(kanjiData["alternate_meanings"])[1:-1].replace("'",""),
         ]
         )
 
         #add node to deck
-        readingDeck.add_note(newReadingNote)
+        writingDeck.add_note(newWritingNote)
 
-    readingPackage = genanki.Package(readingDeck)
+    readingPackage = genanki.Package(writingDeck)
 
-    readingModel.css = str(open("main.css",'r').read())
+    writingModel.css = str(open("main.css",'r').read())
 
     #get directory where svg files are stored
     DIRECTORY = "Heisig Kanji SVG/"
     allFilePaths = [DIRECTORY + p for p in os.listdir(DIRECTORY)]
     #add all media files to package
     readingPackage.media_files = allFilePaths
-    readingPackage.write_to_file('WritingDeck.apkg')
+    readingPackage.write_to_file('SpeakingDeck.apkg')
 
 generateWritingDeck()
