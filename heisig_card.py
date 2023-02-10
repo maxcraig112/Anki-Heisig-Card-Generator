@@ -72,7 +72,7 @@ def generateWritingDeck():
     heisigData = json.load(file)
 
     readingModel = genanki.Model(
-        random.randrange(1 << 30, 1 << 31),
+        120391087121,
         'Heisig Writing Model',
         fields=[
             {'name': 'Heisig Meaning'},
@@ -95,7 +95,7 @@ def generateWritingDeck():
     )
 
     readingDeck = genanki.Deck(
-        random.randrange(1 << 30, 1 << 31),
+        120392312321,
         'Heisig Writing Deck'
     )
 
