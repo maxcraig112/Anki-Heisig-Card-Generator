@@ -11,7 +11,7 @@ import os
 #     shutil.move("C:/Users/maxcr/Desktop/kanjivg/kanji/" + kanjiList[kanjiData]["stroke_order"],"Heisig Kanji SVG/")
 
 OLD_WIDTH_HEIGHT = 400
-NEW_WIDTH_HEIGHT = 400
+NEW_WIDTH_HEIGHT = 200
 DIRECTORY = "Heisig Kanji SVG/"
 
 for file in os.listdir(DIRECTORY):

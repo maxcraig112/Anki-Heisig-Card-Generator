@@ -10,16 +10,16 @@ Using the [Kanji Api](https://kanjiapi.dev/), all Kanji characters are downloade
 
 **Front:** Kanji Character
 **Back:**
-- Heisig Meaning
-- Alternate meanings
+- Heisig Meaning - text
 - Kun Reading
 - Stroke order
+- Alternate Meanings
 
 ## Writing/Speaking Practice
 **Front:** Heisig Meaning
 **Back:** 
-- Kun Reading
 - Kanji Character 
+- Kun Reading
 - Stroke order
 - Alternate Meanings
 

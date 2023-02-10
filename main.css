@@ -1,0 +1,15 @@
+.main {
+    text-align: center;
+}
+
+.answer {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
