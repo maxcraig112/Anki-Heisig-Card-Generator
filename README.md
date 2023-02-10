@@ -4,6 +4,7 @@ Allows you to input strings that relate to the Heisig keyword, and returns autof
 
 Returns 2 types, reading practice and writing/speaking practice. The format of either are listed below
 
+Using the [Kanji Api](https://kanjiapi.dev/), all Kanji characters are downloaded, and then reformated so the Heiseg meaning is the key
 
 ## Reading Practice
 
